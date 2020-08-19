@@ -7,16 +7,18 @@
 </head>
 <body>
     <script>
-        fill(0, 234, 255);
-        rect(100, 100, 150, 50, 5);
-        fill(0, 0, 0);
-        textSize(19);
-        text("Discord Server", 110, 133);
+        function MyFunction () {
+            fill(0, 234, 255);
+            rect(100, 100, 150, 50, 5);
+            fill(0, 0, 0);
+            textSize(19);
+            text("Discord Server", 110, 133);
 
-        mouseClicked = function() {
-            if (mouseX >= 100 && mouseX <= 250 &&
-            mouseY >= 100 && mouseY <= 150) {
-                printIn("Discord")
+                mouseClicked = function() {
+                    if (mouseX >= 100 && mouseX <= 250 &&
+                    mouseY >= 100 && mouseY <= 150) {
+                    printIn("Discord")
+                }
             }
         }
     </script>
