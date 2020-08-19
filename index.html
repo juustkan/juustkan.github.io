@@ -6,15 +6,20 @@
     <title>Minha primeira página Web</title>
 </head>
 <body>
-    <h1>Turma AIPR 2020 M1</h1>
-    #discord {
-        width: 500px;
-        height: 200px;
-        background-image: url('https://cdn.discordapp.com/attachments/571814173529341952/735235056141860905/cord.png')
-        background-size: cover;
-        background-color: #eee;
-    }
+    <script>
+        fill(0, 234, 255);
+        rect(100, 100, 150, 50, 5);
+        fill(0, 0, 0);
+        textSize(19);
+        text("Discord Server", 110, 133);
 
-    <button id="discord">Access our Discord server!</button>
+        mouseClicked = function() {
+            if (mouseX >= 100 && mouseX <= 250 &&
+            mouseY >= 100 && mouseY <= 150) {
+                printIn("Discord")
+            }
+        }
+    </script>
+    <h1>Turma AIPR 2020 M1</h1>
 </body>
 </html>
