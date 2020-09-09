@@ -1,0 +1,48 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Grandstander:wght@200&display=swap');
+
+/* Seletor para o corpo da página */
+body {
+    background-color: darkviolet;
+    color: rgb(209, 171, 171);
+    font-family: cursive;
+}
+
+/* Seletor h1 e suas propriedades */
+h1 {
+    color: goldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 400%;
+    text-align: center;
+}
+
+/* Seletor h2 e suas propriedades */
+h2 {
+    color: lightyellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+}
+
+/* Seletor da img, propriedade e valores */
+img {
+    height: 200px;
+    width: 200px;
+    box-shadow: 5px 5px 10px black; /* Sombra */
+    border-radius: 20px;
+}
+
+/* Identificadores usam # */
+img#Logos {
+    /* Centralização da Imagem */
+    display: block;
+    margin: 50px auto;
+    width: 50%;
+    height: auto;
+}
+
+/* Classes usam . */
+img.logo {
+    margin-left: 13%;
+    /* Arredondamento da imagem */
+    border-radius: 50%;
+}
