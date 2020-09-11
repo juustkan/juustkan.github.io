@@ -4,6 +4,12 @@
 let entradas = document.querySelectorAll('input');
 //Botão somar
 let btnSomar = document.querySelector('#btnSomar');
+// Botão subtrair
+let btnSubtrair = document.querySelector('#btnSubtrair');
+// Botão multiplicar
+let btnMultiplicar = document.querySelector('#btnMultiplicar');
+// Botão dividir
+let btnDividir = document.querySelector('#btnDividir');
 //Parágrafo de resposta
 let resposta = document.querySelector('.resposta')
  
@@ -38,20 +44,38 @@ function somar(){
    }
 }
 
+//Função Subtrair
+function subtrair(){
+    if(verificarEntradasVazias()){
+        atualizaResposta2();
+    }else{
+        atualizaResposta2();
+    }
+ }
+
+ //Função Multiplicar
+function multiplicar(){
+    if(verificarEntradasVazias()){
+        atualizaResposta3();
+    }else{
+        atualizaResposta3();
+    }
+ }
+
+ //Função Dividir
+function dividir(){
+    if(verificarEntradasVazias()){
+        atualizaResposta4();
+    }else{
+        atualizaResposta4();
+    }
+ }
+
 //Escuta de evento click do mouse
 btnSomar.addEventListener('click',somar);
- 
-//Atualizar o campo de resposta de acordo com a função
-function atualizaResposta() {
-   if(verificarEntradasVazias()){
-       resposta.textContent = "Erro: Preencha os dois números!"
-   }else{
-       let numero1 = pegarNum1();
-       let numero2 = pegarNum2();
-       let soma = numero1 + numero2;
-       resposta.textContent = `${numero1} + ${numero2} = ${soma}`;
-   }
-}
+btnSubtrair.addEventListener('click',subtrair);
+btnMultiplicar.addEventListener('click',multiplicar);
+btnDividir.addEventListener('click',dividir);
 
 //Atualizar o campo de resposta de acordo com a função
 function atualizaResposta() {
@@ -71,4 +95,59 @@ function atualizaResposta() {
         resposta.textContent = `${numero1} + ${numero2} = ${soma}`;
     }
  }
- 
+// Atualizar o campo de resposta de acordo com a função de subtração
+ function atualizaResposta2() {
+    if(verificarEntradasVazias()){
+        resposta.classList.remove('certa');
+        resposta.classList.add('errada');
+        //debugger;
+        resposta.textContent = "Erro: Preencha os dois números!"
+    }else{
+        resposta.classList.remove('errada');
+        resposta.classList.add('certa');
+        let numero1 = pegarNum1();
+        numero1 = parseFloat(numero1);//Convertendo para número Real
+        let numero2 = pegarNum2();
+        numero2 = parseFloat(numero2);//Convertendo para número Real
+        let subtracao = numero1 - numero2;
+        resposta.textContent = `${numero1} - ${numero2} = ${subtracao}`;
+    }
+ }
+
+// Atualizar o campo de resposta de acordo com a função de multiplicação
+ function atualizaResposta3() {
+    if(verificarEntradasVazias()){
+        resposta.classList.remove('certa');
+        resposta.classList.add('errada');
+        //debugger;
+        resposta.textContent = "Erro: Preencha os dois números!"
+    }else{
+        resposta.classList.remove('errada');
+        resposta.classList.add('certa');
+        let numero1 = pegarNum1();
+        numero1 = parseFloat(numero1);//Convertendo para número Real
+        let numero2 = pegarNum2();
+        numero2 = parseFloat(numero2);//Convertendo para número Real
+        let multiplicao = numero1 * numero2;
+        resposta.textContent = `${numero1} * ${numero2} = ${multiplicao}`;
+    }
+ }
+
+// Atualizar o campo de resposta de acordo com a função de divisão
+  function atualizaResposta4() {
+    if(verificarEntradasVazias()){
+        resposta.classList.remove('certa');
+        resposta.classList.add('errada');
+        //debugger;
+        resposta.textContent = "Erro: Preencha os dois números!"
+    }else{
+        resposta.classList.remove('errada');
+        resposta.classList.add('certa');
+        let numero1 = pegarNum1();
+        numero1 = parseFloat(numero1);//Convertendo para número Real
+        let numero2 = pegarNum2();
+        numero2 = parseFloat(numero2);//Convertendo para número Real
+        let divisao = numero1 / numero2;
+        resposta.textContent = `${numero1} / ${numero2} = ${divisao}`;
+    }
+ }

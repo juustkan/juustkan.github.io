@@ -16,7 +16,7 @@ header {
 main input {
     /*Quebra linha e coloca um abaixo do outro*/
     display: block;
-    margin: 10px;
+    margin: auto;
     padding: 10px;
     width: 50px;
     border-radius: 3px;
@@ -24,7 +24,7 @@ main input {
     color: cyan;
     font-weight: bold; /*Negrito*/
  }
- 
+
  main button {
     margin: 10px;
     border: 1px solid darkblue;
@@ -44,11 +44,20 @@ main input {
     /*Sombra externa*/
     box-shadow: 0 0 5px darkblue;
     text-shadow: 0 0 3px lightskyblue;
-    transform: scale(1.01, 1.01);
+    transform: scale(1.1, 1.1);
+ }
+ .container {
+     text-align: center;
+ }
+ #num1 {
+     text-align: center;
+ }
+ #num2 {
+     text-align: center;
  }
  /*Estilização da classe Resposta*/
 .resposta {
-    /*Centralizando o elemento na página*/
+/*Centralizando o elemento na página*/
     margin: 10px auto;
     padding: 5px;
     text-align: center;
@@ -65,4 +74,3 @@ main input {
     color: blue;
     outline: 2px double greenyellow;
  }
- 
