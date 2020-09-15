@@ -40,6 +40,8 @@ input[type="button"] {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
+    /* Animação de fade in de uma cor ao
+    passar o mouse por cima dos botões */
     .mousefade{
         display: inline-block;
         vertical-align: middle;
@@ -55,6 +57,7 @@ input[type="button"] {
         color: white;
     }
 
+/* Ajustes do texto */
 .content{
     position: relative;
     padding-bottom: 500;
@@ -72,6 +75,7 @@ input[type="button"] {
     -webkit-text-stroke: 2px #ffffff;
 }
 
+/* Animação de onda do texto*/
 .content h2:nth-child(2){
     color: #ff00ee;
     animation: animate 4s ease-in-out infinite, color-change 10s infinite;
@@ -85,6 +89,7 @@ input[type="button"] {
     }
 }
 
+/* Animação de troca de cor suave do texto */
 @keyframes color-change {
     0% { color: #f54242; }
     10% { color: #f57b42; }
