@@ -4,7 +4,7 @@ article img {
 
 .card {
     margin-bottom: 20px;
-    transition: all 30ms;
+    transition: all 300ms;
 }
 
 .card:hover {
