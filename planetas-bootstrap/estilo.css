@@ -4,7 +4,6 @@ article img {
 
 .card {
     margin-bottom: 20px;
-    margin-left: 20px;
     transition: all 300ms;
 }
 
@@ -14,4 +13,5 @@ article img {
 
 .card-body {
     margin-top: 15px;
+    margin-left: 20px;
 }
